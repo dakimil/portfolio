@@ -20,6 +20,8 @@ let createNewTaskElement = function (taskString) {
     let checkBox = document.createElement("input");
     // label
     let label = document.createElement("label");
+    // taskDescription
+    let taskDescription = document.createElement("taskDescription");
     // input (text)
     let editInput = document.createElement("input");
     // button.edit
@@ -44,6 +46,7 @@ let createNewTaskElement = function (taskString) {
     // Append elements
     listItem.appendChild(checkBox);
     listItem.appendChild(label);
+    listItem.appendChild(taskDescription);
     listItem.appendChild(editInput);
     listItem.appendChild(editButton);
     listItem.appendChild(deleteButton);
